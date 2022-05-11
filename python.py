@@ -1,10 +1,13 @@
-from time import strftime, sleep
-   
-   while True:
-        try:
-            print(strftime("%H:%M:%S"), end='\r')
-            sleep(1)
-        except KeyboardInterrupt as e:
-            print("", end='\r', flush=True)
-            print("Sayonara !!!")
-            exit(0)
+    from time import strftime, sleep
+
+    def start_clock():
+        while True:
+            try:
+                print(strftime("%H:%M:%S"), end='\r')
+                sleep(1)
+            except KeyboardInterrupt as e:
+                print("", end='\r', flush=True)
+                print("Sayonara !!!")
+                exit(0)
+       
+    start_clock()    
