@@ -6,5 +6,5 @@ from time import strftime, sleep
             sleep(1)
         except KeyboardInterrupt as e:
             print("", end='\r', flush=True)
-            print("Bye Bye...")
+            print("Sayonara !!!")
             exit(0)
